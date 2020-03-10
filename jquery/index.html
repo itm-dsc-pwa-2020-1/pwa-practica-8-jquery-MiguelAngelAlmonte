@@ -5,6 +5,16 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" type="text/css" href="grid.css" />
     <title>Ejemplos JQuery</title>
+    <script type="text/javascript" src="jquery-3.4.1.min.js"></script>
+    <script type="text/javascript">
+     $(document).ready(inicio)
+     function inicio(){
+         $("#aceptar").on("click",mensaje);
+     }
+     function mensaje(){
+         alert("Hola¡¡¡¡");
+     }
+    </script>
 </head>
 <body>
   <div class="grid">
@@ -12,7 +22,7 @@
        <h1>Ejemplos de JQuery</h1>
     </div>
     <div class="caja2">
-        Caja2
+        <button id="aceptar">Alerta</button>
     </div>
     <div class="caja3">
         Caja3
